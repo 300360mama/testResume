@@ -1,0 +1,73 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+.container{
+	width: 100%;
+	height: 100vh;
+	background: #AEB4A7;
+	opacity: 0.8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.language a:first-of-type::after{
+	content: '|';
+	padding-left: 3px;
+
+}
+
+.language a.active{
+	color:green;
+}
+
+
+
+#registrationForm{
+	box-sizing: border-box;
+	width: 600px;
+	height: 60vh;
+	background: #8BFBE9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+
+form label{
+	width: 20%;
+}
+
+form input{
+	height: 30px;
+	width: 50%;
+}
+
+.input span{
+	width: 30%;
+}
+
+form>section{
+	display: flex;
+	width: 70%;
+	justify-content: flex-start;
+
+}
+form>section:first-of-type{
+	display: flex;
+	width: 70%;
+	justify-content: space-between;
+}
+

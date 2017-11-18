@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/languageForm.js" ></script>
+</head>
+<body>
+	<div class="container">
+		<form id='registrationForm' action="">
+			<section class="titleForm">
+				<span>Заполните форму</span>
+			    <section class="language">
+				    <a class="active" id="ru" href="#">Ru</a>
+				    <a id="en" href="#">En</a>
+			    </section>
+				
+			</section>
+			
+        <section class="input inputName">
+        	<label  for="name">Ваше имя</label>
+		    <input  autofocus id="name" type="text" placeholder="Иван Иванович Иванов" pattern="^[\w\sа-яА-Я]+$"  required>
+		    <span class="errorMsg"></span>
+		    
+        </section>
+        <section class="input inputEmail">
+        	<label for="email">E-mail</label>
+		    <input  id="email" type="text" placeholder="email.email.com" required pattern="^[-_\w\d]+@[-_\w\d]+\.[a-z]{2,6}$" autocomplete=" off" >
+		    <span class="errorMsg"></span>
+		    
+		</section>
+        <section class="input inputPassword" >
+        	<label  for="password">Пароль</label>
+		    <input  id="password" placeholder="1pdSdfS" type="password"
+		    pattern="^[\wа-яА-Я]+$" required autocomplete="off" >
+		    <span class="errorMsg"></span>
+
+        </section>
+        <section class="input inputFile">
+        	<label for="img">Загрузите картинку</label>
+		    <input id="img" type="file">
+		    <span class="errorMsg"></span>
+	    </section>
+		
+		
+		
+
+		
+		
+		<input type="submit" value="Отправить" class="input submit" name="">
+	</form>
+		
+	</div>
+	<script type="text/javascript" src="js/validateForm.js" ></script>
+	
+</body>
+</html>

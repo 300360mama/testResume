@@ -1,0 +1,117 @@
+*{
+	margin:0;
+	padding: 0;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	cursor: pointer;
+}
+
+ul{
+	list-style: none;
+}
+
+header, header ul, nav{
+	display: flex;
+
+}
+
+.button-menu{
+	display: none;
+	width: 30px;
+
+}
+
+.button-menu span{
+	display: block;
+	width: 20px;
+	height: 2px;
+	background: #fff;
+	margin-top: 2px;
+
+}
+
+header{
+	background: red;
+	flex-basis: 100%;
+	justify-content: space-between;
+}
+
+header .header-nav{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.left-nav{
+	display: none;
+}
+
+nav{
+	justify-content: flex-start;
+}
+
+
+.header-nav>span, nav ul li{
+	display: block;
+	padding: 10px 5px;
+	border-right: 2px #fff solid;
+	box-sizing: border-box;
+}
+
+header section>span{
+	
+	width: 250px;
+}
+
+header .help-button{
+	border-left: 2px solid #fff;
+	padding: 10px 5px;
+}
+
+
+
+
+.content{
+	display: flex;
+	justify-content: space-between;
+}
+.block2, .block3{
+	height: 100vh;
+}
+.block1{
+	background: #ff12ff;
+	height: 200px;
+	width: 250px;
+}
+.block2{
+	background: #e12a44;
+	box-sizing: border-box;
+	width: calc(100% - 470px);
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+
+}
+
+.block2 section{
+	margin: 5px 0;
+	background: #f1e111;
+	display: flex;
+}
+
+.block2 section{
+	margin: 5px 0;
+	background: #f1e111;
+}
+.block3{
+	width: 200px;
+	background: #ddff3f;
+}
+
+
+
